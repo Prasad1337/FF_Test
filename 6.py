@@ -17,20 +17,19 @@ class CityInformation:
 
         # Event handler for OptionMenu
         def picker_update(*args):
-            for x in city_info:
-                if city_picker_variable.get() == x['name']:
+            for y in city_info:
+                if city_picker_variable.get() == y['name']:
                     county_value.delete(0, END)
                     latitude_value.delete(0, END)
                     longitude_value.delete(0, END)
-                    county_value.insert(0, x['full_county_name'])
-                    latitude_value.insert(0, x['primary_latitude'])
-                    longitude_value.insert(0, x['primary_longitude'])
+                    county_value.insert(0, y['full_county_name'])
+                    latitude_value.insert(0, y['primary_latitude'])
+                    longitude_value.insert(0, y['primary_longitude'])
                     break
 
         city_picker_variable = StringVar(master)
         city_picker_variable.set("")  # default value
         city_picker = apply(OptionMenu, (master, city_picker_variable) + tuple(options))
-        city_picker_variable.trace('w', picker_update)
 
         master.wm_title("City Information")
         city_label = Label(master, text="City")
@@ -49,6 +48,8 @@ class CityInformation:
         county_value.grid(row=1, column=1)
         latitude_value.grid(row=2, column=1)
         longitude_value.grid(row=3, column=1)
+
+        city_picker_variable.trace('w', picker_update)
 
 
 root = Tk()
