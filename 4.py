@@ -1,3 +1,4 @@
+# Function to find minimum value
 def find_min(a, b, c):
     if a < b and a < c:
         return a

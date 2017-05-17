@@ -1,6 +1,8 @@
+# Imports
 from collections import Counter
 
 
+# Class of Items
 class Items:
     __itemList = []
 

@@ -1,3 +1,4 @@
+# Function to find type of string
 def find_type_of_string(string):
     try:
         int(string)
