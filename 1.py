@@ -6,6 +6,7 @@ from collections import Counter
 class Items:
     __itemList = []
 
+    # Constructor
     def __init__(self, item_list):
         self.__itemList = item_list
 
