@@ -1,0 +1,9 @@
+def apply_operation(left_operand, right_operand, operator):
+    if operator == '+':
+        return left_operand + right_operand
+    elif operator == '-':
+        return left_operand - right_operand
+    elif operator == '*':
+        return left_operand * right_operand
+    elif operator == '/':
+        return left_operand / right_operand
