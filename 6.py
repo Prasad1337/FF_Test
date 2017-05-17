@@ -1,0 +1,17 @@
+import Tkinter
+
+root = Tkinter.Tk()
+root.wm_title("City Information")
+leftFrame = Tkinter.Frame(root)
+rightFrame = Tkinter.Frame(root)
+leftFrame.pack(side=Tkinter.LEFT)
+rightFrame.pack(side=Tkinter.RIGHT)
+city_label = Tkinter.Label(leftFrame, text="City")
+county_label = Tkinter.Label(leftFrame, text="County")
+latitude_label = Tkinter.Label(leftFrame, text="Latitude")
+longitude_label = Tkinter.Label(leftFrame, text="Longitude")
+city_label.pack()
+county_label.pack()
+latitude_label.pack()
+longitude_label.pack()
+root.mainloop()
