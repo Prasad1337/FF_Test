@@ -6,6 +6,9 @@ import json
 class CityInformation:
     # Constructor
     def __init__(self, master):
+        city_info_file = open("ca.json", "r")
+        
+
         master.wm_title("City Information")
         left_frame = Tkinter.Frame(master)
         right_frame = Tkinter.Frame(master)
