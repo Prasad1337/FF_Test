@@ -1,4 +1,4 @@
-def findTypeOfString(string):
+def find_type_of_string(string):
     try:
         int(string)
         return "int"

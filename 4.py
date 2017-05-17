@@ -1,7 +1,7 @@
-def findMin(a, b, c):
-    if a<b and a<c :
+def find_min(a, b, c):
+    if a < b and a < c:
         return a
-    elif b<a and b<c :
+    elif b < a and b < c:
         return b
-    else :
+    else:
         return c

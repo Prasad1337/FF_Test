@@ -1,22 +1,23 @@
 from collections import Counter
 
+
 class Items:
     __itemList = []
 
-    def __init__(self, itemList):
-        self.__itemList = itemList
+    def __init__(self, item_list):
+        self.__itemList = item_list
 
-    def setList(self, itemList):
-        self.__itemList = itemList
+    def set_list(self, item_list):
+        self.__itemList = item_list
 
-    def getList(self):
+    def get_list(self):
         return self.__itemList
 
-    def getUniqueItems(self):
+    def get_unique_items(self):
         return set(self.__itemList)
 
-    def getItemsWithFrequencies(self):
+    def get_items_with_frequencies(self):
         return Counter(self.__itemList)
 
-    def addItem(self, item):
+    def add_item(self, item):
         self.__itemList.append(item)
